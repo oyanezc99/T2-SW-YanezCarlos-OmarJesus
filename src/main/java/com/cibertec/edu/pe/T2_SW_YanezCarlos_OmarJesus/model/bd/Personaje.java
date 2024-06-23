@@ -4,21 +4,18 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
+@Getter
+@Setter
 @Entity
 public class Personaje {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer IdPersonaje;
-    private String NomPersonaje;
-    private String ApePersonaje;
-    private LocalDate FechNacPersonaje;
+    private Integer idPersonaje;
+    private String nomPersonaje;
+    private String apePersonaje;
+    private LocalDate fechNacPersonaje;
 }

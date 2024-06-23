@@ -1,15 +1,12 @@
 package com.cibertec.edu.pe.T2_SW_YanezCarlos_OmarJesus.model.bd;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
+@Getter
+@Setter
 @Entity
 public class ProgramTv {
     @Id
